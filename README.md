@@ -8,16 +8,19 @@
 
 ## Requirements
 
-PHP 5.4.0 or later
-PHP Extensions curl, json, mbstring
-Tools: GIT, Composer
+* PHP 5.4.0 or later
+* PHP Extensions curl, json, mbstring
+* Tools: GIT, Composer
 
-## Installation & Usage
-### GIT
-    git clone https://github.com/siwiat/...
+## Usage
+
+### Installation
+
+    git clone https://github.com/siwiat/out-app-json-client-php.git
     composer install
     
 ## Getting started
+
 Change the host to your SIWIAT App-Box in ```sample.php```:
 
 ```php
@@ -36,9 +39,10 @@ will show the current value of the 0th channel:
 ## Sample.php explained
 
 In the sample.php you find a simple minimal client. This client
-* Fetches all channels from the App-Box
-* Extracts the valueid of the 0th channel
-* Fetches the measurement value of the 0th channel with this valueid
+
+* fetches all channels from the App-Box
+* extracts the valueid of the 0th channel
+* fetches the measurement value of the 0th channel with this valueid
 
 ```php
 <?php
@@ -71,6 +75,7 @@ Ondics GmbH
 ## License
 
 Apache License 2.0
+
 For details see [LICENSE](./LICENSE)
 
 ## Notes
