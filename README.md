@@ -8,16 +8,20 @@
 
 ## Requirements
 
-PHP 5.4.0 or later
-PHP Extensions curl, json, mbstring
-Tools: GIT, Composer
+* SIWIAT App-Box with Out-App JSON with IP-Address [IP-OF-YOUR-APP-BOX]
+* PHP 5.4.0 or later
+* PHP Extensions curl, json, mbstring
+* Tools: git, Composer
 
-## Installation & Usage
-### GIT
-    git clone https://github.com/siwiat/...
+## Usage
+
+### Installation
+
+    git clone https://github.com/siwiat/out-app-json-client-php.git
+    cd out-app-json-client-php
     composer install
     
-## Getting started
+### Getting started
 Change the host to your SIWIAT App-Box in ```sample.php```:
 
 ```php
@@ -33,7 +37,7 @@ will show the current value of the 0th channel:
     Value 0th Channel: 42
 
     
-## Sample.php explained
+### Sample.php explained
 
 In the sample.php you find a simple minimal client. This client
 * Fetches all channels from the App-Box
