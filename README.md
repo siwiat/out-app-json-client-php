@@ -8,33 +8,21 @@
 
 ## Requirements
 
-<<<<<<< HEAD
 * SIWIAT App-Box with Out-App JSON with IP-Address [IP-OF-YOUR-APP-BOX]
 * PHP 5.4.0 or later
 * PHP Extensions curl, json, mbstring
 * Tools: git, Composer
-=======
-* PHP 5.4.0 or later
-* PHP Extensions curl, json, mbstring
-* Tools: GIT, Composer
->>>>>>> refs/remotes/siwiat/master
 
 ## Usage
 
 ### Installation
 
     git clone https://github.com/siwiat/out-app-json-client-php.git
-<<<<<<< HEAD
     cd out-app-json-client-php
     composer install
-    
-### Getting started
-=======
-    composer install
-    
-## Getting started
 
->>>>>>> refs/remotes/siwiat/master
+### Getting started
+
 Change the host to your SIWIAT App-Box in ```sample.php```:
 
 ```php
@@ -44,12 +32,12 @@ $client->getConfig()->setHost('http://[IP-OF-YOUR-APP-BOX]/websites/ab/index.php
 Executing the ```sample.php```
 
     > php sample.php
-    
+
 will show the current value of the 0th channel:
 
     Value 0th Channel: 42
 
-    
+
 ### Sample.php explained
 
 In the sample.php you find a simple minimal client. This client
@@ -67,7 +55,7 @@ $client->getConfig()->setHost('http://[IP-OF-YOUR-APP-BOX]/websites/ab/index.php
 $api = new Swagger\Client\Api\DefaultApi($client);
 
 try {
-    // Get valueid of first (0th) channel 
+    // Get valueid of first (0th) channel
     $valueid = $api->getChannelsResponse()->getChannels()[0]->getValueid();
     // Get current value with this valueid
     $value = $api->getValuesResponse($valueid)->getValues()[0]->getValue();
