@@ -69,7 +69,7 @@ class GetChannelsResponse implements ArrayAccess
         'success' => 'bool',
         'channels' => '\Swagger\Client\Model\Channel[]',
         'errorno' => 'int',
-        'errortype' => 'string'
+        'errormsg' => 'string'
     ];
 
     public static function swaggerTypes()
@@ -85,7 +85,7 @@ class GetChannelsResponse implements ArrayAccess
         'success' => 'success',
         'channels' => 'channels',
         'errorno' => 'errorno',
-        'errortype' => 'errortype'
+        'errormsg' => 'errormsg'
     ];
 
 
@@ -97,7 +97,7 @@ class GetChannelsResponse implements ArrayAccess
         'success' => 'setSuccess',
         'channels' => 'setChannels',
         'errorno' => 'setErrorno',
-        'errortype' => 'setErrortype'
+        'errormsg' => 'seterrormsg'
     ];
 
 
@@ -109,7 +109,7 @@ class GetChannelsResponse implements ArrayAccess
         'success' => 'getSuccess',
         'channels' => 'getChannels',
         'errorno' => 'getErrorno',
-        'errortype' => 'getErrortype'
+        'errormsg' => 'geterrormsg'
     ];
 
     public static function attributeMap()
@@ -146,7 +146,7 @@ class GetChannelsResponse implements ArrayAccess
         $this->container['success'] = isset($data['success']) ? $data['success'] : null;
         $this->container['channels'] = isset($data['channels']) ? $data['channels'] : null;
         $this->container['errorno'] = isset($data['errorno']) ? $data['errorno'] : null;
-        $this->container['errortype'] = isset($data['errortype']) ? $data['errortype'] : null;
+        $this->container['errormsg'] = isset($data['errormsg']) ? $data['errormsg'] : null;
     }
 
     /**
@@ -236,22 +236,22 @@ class GetChannelsResponse implements ArrayAccess
     }
 
     /**
-     * Gets errortype
+     * Gets errormsg
      * @return string
      */
-    public function getErrortype()
+    public function geterrormsg()
     {
-        return $this->container['errortype'];
+        return $this->container['errormsg'];
     }
 
     /**
-     * Sets errortype
-     * @param string $errortype
+     * Sets errormsg
+     * @param string $errormsg
      * @return $this
      */
-    public function setErrortype($errortype)
+    public function seterrormsg($errormsg)
     {
-        $this->container['errortype'] = $errortype;
+        $this->container['errormsg'] = $errormsg;
 
         return $this;
     }

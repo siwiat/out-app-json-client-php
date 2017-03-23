@@ -67,9 +67,7 @@ class GetValuesResponse implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'success' => 'bool',
-        'values' => '\Swagger\Client\Model\Value[]',
-        'errorno' => 'int',
-        'errortype' => 'string'
+        'values' => '\Swagger\Client\Model\Value[]'
     ];
 
     public static function swaggerTypes()
@@ -83,9 +81,7 @@ class GetValuesResponse implements ArrayAccess
      */
     protected static $attributeMap = [
         'success' => 'success',
-        'values' => 'values',
-        'errorno' => 'errorno',
-        'errortype' => 'errortype'
+        'values' => 'values'
     ];
 
 
@@ -95,9 +91,7 @@ class GetValuesResponse implements ArrayAccess
      */
     protected static $setters = [
         'success' => 'setSuccess',
-        'values' => 'setValues',
-        'errorno' => 'setErrorno',
-        'errortype' => 'setErrortype'
+        'values' => 'setValues'
     ];
 
 
@@ -107,9 +101,7 @@ class GetValuesResponse implements ArrayAccess
      */
     protected static $getters = [
         'success' => 'getSuccess',
-        'values' => 'getValues',
-        'errorno' => 'getErrorno',
-        'errortype' => 'getErrortype'
+        'values' => 'getValues'
     ];
 
     public static function attributeMap()
@@ -145,8 +137,6 @@ class GetValuesResponse implements ArrayAccess
     {
         $this->container['success'] = isset($data['success']) ? $data['success'] : null;
         $this->container['values'] = isset($data['values']) ? $data['values'] : null;
-        $this->container['errorno'] = isset($data['errorno']) ? $data['errorno'] : null;
-        $this->container['errortype'] = isset($data['errortype']) ? $data['errortype'] : null;
     }
 
     /**
@@ -214,47 +204,6 @@ class GetValuesResponse implements ArrayAccess
         return $this;
     }
 
-    /**
-     * Gets errorno
-     * @return int
-     */
-    public function getErrorno()
-    {
-        return $this->container['errorno'];
-    }
-
-    /**
-     * Sets errorno
-     * @param int $errorno
-     * @return $this
-     */
-    public function setErrorno($errorno)
-    {
-        $this->container['errorno'] = $errorno;
-
-        return $this;
-    }
-
-    /**
-     * Gets errortype
-     * @return string
-     */
-    public function getErrortype()
-    {
-        return $this->container['errortype'];
-    }
-
-    /**
-     * Sets errortype
-     * @param string $errortype
-     * @return $this
-     */
-    public function setErrortype($errortype)
-    {
-        $this->container['errortype'] = $errortype;
-
-        return $this;
-    }
     /**
      * Returns true if offset exists. False otherwise.
      * @param  integer $offset Offset
